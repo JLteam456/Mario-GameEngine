@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #87c9f0;
+    padding: 20px;
+}
+
+h1 {
+    color: #3ac71e;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0059a8;
+}
+
+#puzzle-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-gap: 2px;
+}
+
+.input-cell {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #e8fd6e;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.blocked-cell {
+    background-color: #ccc;
+    pointer-events: none;
+}
